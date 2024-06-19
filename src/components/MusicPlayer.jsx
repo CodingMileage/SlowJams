@@ -30,8 +30,8 @@ const MusicPlayer = ({
   }, [soundRef]);
 
   return (
-    <div className="bg-[url('https://picsum.photos/900')] p-4 flex justify-center items-center">
-      <div className="bg-white p-8 rounded-lg shadow-md w-80">
+    <div className="p-4 flex justify-center items-center">
+      <div className="p-10 rounded-lg shadow-lg w-80 backdrop-blur-sm bg-white/20 backdrop-brightness-90">
         <img
           src="https://picsum.photos/200"
           alt=""
@@ -176,12 +176,12 @@ const MusicPlayer = ({
 
         <div className="h-2 mt-6 bg-gray-200 rounded-full">
           <div
-            className="h-2 bg-teal-500 rounded-full"
+            className="h-2 bg-blue-500 rounded-full"
             style={{ width: `${(currentTime / songLength) * 100}%` }}
           ></div>
         </div>
 
-        <div className="flex justify-between mt-2 text-sm text-gray-600">
+        <div className="flex justify-between mt-1 text-md font-bold text-black-600">
           <span>{formatTime(currentTime)}</span>
           <span>{formatTime(songLength)}</span>
         </div>

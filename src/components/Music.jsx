@@ -28,7 +28,7 @@ const Music = () => {
       setFileUpload(fileUrl);
       setFileFormat(fileExtension);
       setTitle(fileName);
-      setRate(1.0);
+      // setRate(1.0);
 
       localPlay(fileUrl, fileExtension);
     }
@@ -108,7 +108,7 @@ const Music = () => {
   };
 
   return (
-    <div className="card">
+    <div className="backdrop-brightness-80">
       <MusicPlayer
         pausePlay={pausePlay}
         vol={vol}
